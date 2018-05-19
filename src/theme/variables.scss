@@ -4,7 +4,28 @@
 // Font path is used to include ionicons,
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
-
+@font-face {
+  font-family: 'SF_Regular';
+  src:url('../assets/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+ }
+ $font-family-base: "SF_Regular";
+ $font-family-ios-base: $font-family-base;
+ $font-family-md-base: $font-family-base;
+ $font-family-wp-base: $font-family-base;
+ @font-face {
+  font-family: 'SF_Light';
+  src:url('../assets/fonts/SF-Pro-Text-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+ }
+ @font-face {
+  font-family: 'SF_Bold';
+  src:url('../assets/fonts/SF-Pro-Text-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal; 
+ }
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -39,12 +60,17 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  highlight:  #FF0000,
+  highlight:  rgb(255, 59, 48),
 );
 
 $tabs-tab-color-active: color($colors, highlight);
-
 $grid-padding-width: 0px;
+
+$badge-font-weight: light;
+$badge-font-size: 1.2rem;
+$badge-ios-background-color: rgb(255, 59, 48); 
+$badge-md-background-color: rgb(255, 59, 48);
+$badge-wp-background-color: rgb(255, 59, 48);
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

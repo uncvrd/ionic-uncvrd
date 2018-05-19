@@ -19,22 +19,61 @@
     <ion-row>
       <ion-col>
         <div class="featured-container">
-            <img class="featured-img" src="https://img.youtube.com/vi/ioMknC0zhUI/maxresdefault.jpg" />
-            <div class="featured-meta-container">
-              <div class="medium-profile-picture-container">
-                <img class="medium-profile-picture" src="https://yt3.ggpht.com/-JGZxiRXR_s0/AAAAAAAAAAI/AAAAAAAAAAA/5gQ1m7P1s4U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" />
-              </div>
-              <div class="featured-meta-text-container">
-                <div class="featured-meta-text">Louis The Child - Better Now (Lyrics) feat. Wafia</div>
-                <div class="meta-user-container">
-                  <img class="xs-meta-user" src="https://yt3.ggpht.com/-JGZxiRXR_s0/AAAAAAAAAAI/AAAAAAAAAAA/5gQ1m7P1s4U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" />
-                  <img class="xs-meta-user" src="https://yt3.ggpht.com/-JGZxiRXR_s0/AAAAAAAAAAI/AAAAAAAAAAA/5gQ1m7P1s4U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" />
-                </div>
+          <img (click)="openRecentUpload()" class="featured-img" src="https://img.youtube.com/vi/ioMknC0zhUI/maxresdefault.jpg" />
+          <div class="featured-meta-container">
+            <div class="medium-profile-picture-container">
+              <img class="medium-profile-picture" src="https://yt3.ggpht.com/-JGZxiRXR_s0/AAAAAAAAAAI/AAAAAAAAAAA/5gQ1m7P1s4U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"
+              />
+            </div>
+            <div (click)="openRecentUpload()" class="featured-meta-text-container">
+              <div class="featured-meta-text">Louis The Child - Better Now (Lyrics) feat. Wafia</div>
+              <div class="meta-user-container">
+                <img class="xs-meta-user" src="https://yt3.ggpht.com/-JGZxiRXR_s0/AAAAAAAAAAI/AAAAAAAAAAA/5gQ1m7P1s4U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"
+                />
+                <img class="xs-meta-user" src="https://yt3.ggpht.com/-JGZxiRXR_s0/AAAAAAAAAAI/AAAAAAAAAAA/5gQ1m7P1s4U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"
+                />
               </div>
             </div>
+          </div>
         </div>
       </ion-col>
     </ion-row>
+    <div class="top-users-container">
+      <div class="page-header">Top users</div>
+      <ion-row nowrap class="top-user-card-container">
+        <ion-col>
+          <div class="top-user-card">
+              <img class="medium-profile-picture" src="https://yt3.ggpht.com/-JGZxiRXR_s0/AAAAAAAAAAI/AAAAAAAAAAA/5gQ1m7P1s4U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"/>
+              <div class="top-username">jlewallen18</div>
+              <ion-badge>2600</ion-badge>
+            </div>
+        </ion-col>
+        <ion-col>
+          <div class="top-user-card">
+
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="top-user-card">
+
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="top-user-card">
+
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+        <div class="page-header">Community posts</div>
+        <div class="community-post-container" (click)="openCommunityPost()">
+          <div class="post-meta-container">
+            <div class="post-meta-title">Louis the Child - Better Not (Lyrics) feat. Wafia</div>
+            <div class="post-meta-by">By</div>
+            <div class="post-meta-submittedBy">jlewallen18</div>
+          </div>
+          <img class="community-post-img" src="https://img.youtube.com/vi/ioMknC0zhUI/maxresdefault.jpg" />
+        </div>
   </ion-grid>
 
 </ion-content>

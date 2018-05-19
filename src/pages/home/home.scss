@@ -29,16 +29,96 @@ page-home {
         flex-direction: column;
     }
     .featured-meta-text {
-        font-size: 14px; 
+        font-size: 12px;
+        line-height: 1.2;
     }
     .meta-user-container {
         flex-direction: row;
         height: 15px;
+        margin-top: 2px;
+    }
+    .meta-user-container > img {
+        margin-left: -p2x;
+    }
+    .meta-user-container > img:first-child{
+        margin-left: 0;
     }
     .xs-meta-user {
         width: 15px;
         height: 15px;
         border-radius: 15px;
-
     }
+    .top-users-container {
+        background-color: #eee;
+        padding-bottom: 12px;
+    }
+    .top-user-card-container {
+        height: 120px;
+        padding: 0 6px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        word-wrap: break-word;
+    }
+    .top-user-card {
+        width: 120px;
+        height: 120px;
+        border-radius: 3px;
+        background-color: #fff;
+        margin: 0 6px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around
+    } 
+
+    .top-user-card .medium-profile-picture {
+        border: 2px solid #eee;
+    }
+
+    .top-username {
+        font-size: 12px;
+    }
+
+    .user-minutes-watched {
+        color: #666;
+    }
+
+
+    .community-post-container {
+        position: relative;
+    }
+
+    .community-post-img {
+        display: block;
+        filter: brightness(0.6);
+    }
+
+    .post-meta-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 0 8px 12px 8px;
+    }
+
+    .post-meta-title, .post-meta-by, .post-meta-submittedBy {
+        color: white;
+        text-align: center; 
+        font-size: 12px;
+    }
+
+    .post-meta-title {
+        font-size: 14px;
+    }
+
+    .post-meta-by {
+        color: #666;
+        margin: 2px 0 4px 0;
+        font-family: 'SF_Light';
+    }
+
+    .post-meta-submittedBy {
+        font-family: 'SF_Light';
+    }
+
 }

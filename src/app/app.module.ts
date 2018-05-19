@@ -5,6 +5,8 @@ import { MyApp } from './app.component';
 
 import { TabsPageModule } from '../pages/tabs/tabs.module';
 import { HomePageModule } from '../pages/home/home.module';
+import { VideoPageModule } from '../pages/video/video.module';
+import { CommunityPageModule } from '../pages/community/community.module';
 import { MusicPageModule } from '../pages/music/music.module';
 import { SubmitPageModule } from '../pages/submit/submit.module';
 import { ProfilePageModule } from '../pages/profile/profile.module';
@@ -21,6 +23,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BrowserModule,
     TabsPageModule,
     HomePageModule,
+    VideoPageModule,
+    CommunityPageModule,
     MusicPageModule,
     SubmitPageModule,
     ProfilePageModule,

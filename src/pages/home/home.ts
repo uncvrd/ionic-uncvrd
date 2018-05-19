@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { VideoPage } from '../video/video';
+import { CommunityPage } from '../community/community';
 
 /**
  * Generated class for the HomePage page.
@@ -20,6 +22,14 @@ export class HomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
+  }
+
+  openRecentUpload() {
+    this.navCtrl.push(VideoPage);
+  }
+
+  openCommunityPost() {
+    this.navCtrl.push(CommunityPage);
   }
 
 }
